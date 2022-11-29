@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Práctica del servicio REST de SIGUA de la Universidad de Alicante</title>
+	<script src="codigosd.js"></script>
+	<link rel="stylesheet" href="estilosd.css">
+</head>
+<body>
+	<h1> Información y especificación sobre los servicios REST de SIGUA </h1>
+	<section>
+		<h2>Elige una opción</h1>
+		<p><button onclick="funcion1();">Listado de todos los edificios de la Universidad de Alicante</button></p>
+		<p><button onclick="funcion2();">Listado de datos de volumen de todos los edificios de la Universidad de Alicante</button></p>
+		<p><button onclick="funcion3();">Listado de las estancias de un edificio concreto de la Universidad de Alicante</button>
+		<input type="search" name="categoria" id="categoria" placeholder="Edificios" list="listacat"/>
+		<datalist id="listacat"></p>
+		<p><button onclick="funcion4();">Listado de departamentos de la Universidad de Alicante</button>
+			<input type="number"  name="numoc" id="numoc" min="0"  step="0.01" placeholder="Número mínimo"/> </p>
+	</section>
+	<section id="resultado">
+		<h2 id="titulo"></h2>
+	</section>
+	<script>edificios();</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+	text-align: center;
+}
+
+h1{
+	text-decoration-line: underline;
+}
+
+input:hover{
+	background: #E7F44C;
+	cursor: pointer;
+}
+
+#capa-fondo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background-color: rgba(255,255,255, .8);
+}
+
+	#capa-fondo>article{
+		background-color: #fff;
+		border: 2px solid #000;
+		text-align: center;
+		width: 20em;
+
+		position: absolute;
+		top: 2em;
+		left: 50%;
+		transform: translate(-50%); 
+	}
+
+	#capa-fondo>article>h2{
+		background-color: #FFFFFF;
+		margin: .5em;
+		padding: .5em;
+	}
+
+	#capa-fondo>article>footer>button{
+		margin: .5em;
+		font-size: 1em;
+		background-color: #ccc;
+		border: 1px #aaa solid;
+		padding: .5em 2em;
+		cursor: pointer;
+	}
